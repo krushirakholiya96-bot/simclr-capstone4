@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pth
+data/
+*.pyc
+.DS_Store
+simclr.db
+checkpoints/
+results/
