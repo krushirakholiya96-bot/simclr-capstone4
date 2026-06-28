@@ -26,12 +26,11 @@ with col1:
         st.image(image, caption="Uploaded Image", use_column_width=True)
 
 with col2:
-    st.markdown("### How to use")
-    st.info("""
-    This dashboard is connected to a local FastAPI server.
-    To get predictions, run locally:
-    """)
-    st.code("uvicorn api.main:app --host 0.0.0.0 --port 8000")
+    if uploaded_file:
+        if st.button("Predict"):
+            st.warning("API is running locally. Run FastAPI server to get predictions.")
+            st.code("uvicorn api.main:app --host 0.0.0.0 --port 8000")
+
     st.markdown("### API Endpoints")
     st.markdown("""
     - `POST /predict` — Image prediction
@@ -40,3 +39,4 @@ with col2:
     - `GET /history` — Past predictions
     - `GET /health` — Server status
     """)
+    
