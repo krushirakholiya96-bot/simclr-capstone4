@@ -3,8 +3,9 @@
 ![CI/CD](https://github.com/krushirakholiya96-bot/simclr-capstone4/actions/workflows/ci.yml/badge.svg)
 
 ## Live Demo
-- API: https://your-app.onrender.com
-- Dashboard: https://your-app.streamlit.app
+- Dashboard: https://simclr-capstone4.streamlit.app
+- GitHub: https://github.com/krushirakholiya96-bot/simclr-capstone4
+- API: FastAPI + Uvicorn (Local deployment)
 
 ## Project Summary
 Built end-to-end SimCLR Contrastive Self-Supervised Learning system on CIFAR-10 
