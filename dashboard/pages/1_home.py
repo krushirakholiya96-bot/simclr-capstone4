@@ -73,4 +73,4 @@ Deployed via FastAPI + Streamlit with Docker + GitHub Actions CI/CD.
 
 # Navigation button
 if st.button("Start Predicting"):
-    st.switch_page("pages/2_predict.py")
+    st.info("Please select 'predict' from the sidebar!")
